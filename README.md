@@ -5,6 +5,7 @@ List CVEs by **NVD publication date** (not KEV `date_added`).
 ## Why
 
 NVD enrichment (CVSS scoring, CPE matching, etc.) often lags behind publication by hours to days. A freshly published, unauthenticated, pre-auth RCE can sit in NVD's "Received" state with no CVSS score yet. Most tooling filters on CVSS and silently drops these. `freshcve` optionally keeps unscored CVEs in view instead of hiding them.
+Also this is very useful if like me, you want to write PoCs fast for a cve that just dropped. Pulling up to date fresh data allows you to scope and target the path you choose to follow early on, then move to source code analysis or digging binaries. 
 
 ## Requirements
 
